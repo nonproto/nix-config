@@ -16,6 +16,7 @@
   home.packages = with pkgs; [
     nixd
     alejandra
+    telegram-desktop
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.
