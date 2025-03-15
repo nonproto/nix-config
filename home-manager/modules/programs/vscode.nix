@@ -10,8 +10,18 @@
       enable = true;
       package = pkgs.vscodium;
       profiles.default = {
-      extension = [pkgs.vscode-extensions.jnoortheen.nix-ide];
+        extensions = [pkgs.vscode-extensions.jnoortheen.nix-ide];
+        userSettings = {
+        "files.autoSave" = "onWindowChange";
+        "workbench.colorTheme"= "Default Light Modern";
+        "editor.formatOnSave"= true;
+        "window.zoomLevel"= 0.5;
+        "editor.fontSize"= 13;
+        "workbench.preferredLightColorTheme" = "Visual Studio Light";
+        "nix.enableLanguageServer"= true;
+        "nix.serverPath"= "nil";
       };
+      }; 
     };
   };
 }
