@@ -17,6 +17,9 @@
     nixd
     alejandra
     telegram-desktop
+    podman
+    podman-compose
+    tldr-hs
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.
