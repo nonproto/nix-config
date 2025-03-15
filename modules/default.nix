@@ -1,4 +1,4 @@
-{ inputs, ... }: {
+#{ inputs, ... }: {
 
   # may look a bit different
 #  home-manager = {
@@ -13,5 +13,3 @@
  #     };
  #   };
  # };
-
-}

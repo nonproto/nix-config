@@ -1,7 +1,11 @@
-{ pkgs, lib, config, ... }: {
-
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
-    vscode.enable = 
+    vscode.enable =
       lib.mkEnableOption "enables vscode";
   };
 
@@ -12,16 +16,23 @@
       profiles.default = {
         extensions = [pkgs.vscode-extensions.jnoortheen.nix-ide];
         userSettings = {
-        "files.autoSave" = "onWindowChange";
-        "workbench.colorTheme"= "Default Light Modern";
-        "editor.formatOnSave"= true;
-        "window.zoomLevel"= 0.5;
-        "editor.fontSize"= 13;
-        "workbench.preferredLightColorTheme" = "Visual Studio Light";
-        "nix.enableLanguageServer"= true;
-        "nix.serverPath"= "nil";
+          "files.autoSave" = "onWindowChange";
+          "workbench.colorTheme" = "Default Light Modern";
+          "editor.formatOnSave" = true;
+          "window.zoomLevel" = 0.5;
+          "editor.fontSize" = 13;
+          "workbench.preferredLightColorTheme" = "Visual Studio Light";
+          "nix.enableLanguageServer" = true;
+          "nix.serverPath" = "nixd";
+          "nix.serverSettings" = {
+            "nixd" = {
+              "formatting" = {
+                "command" = ["alejandra"];
+              };
+            };
+          };
+        };
       };
-      }; 
     };
   };
 }

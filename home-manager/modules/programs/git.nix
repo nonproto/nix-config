@@ -1,7 +1,11 @@
-{ pkgs, lib, config, ... }: {
-
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
-    git.enable = 
+    git.enable =
       lib.mkEnableOption "enables git";
   };
 
@@ -10,7 +14,6 @@
       enable = true;
       userName = "nonproto";
       userEmail = "2092019+nonproto@users.noreply.github.com";
-
     };
   };
-} 
+}
