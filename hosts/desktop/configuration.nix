@@ -94,7 +94,6 @@
   # Enable automatic login for the user.
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "nonproto";
-  services.displayManager.sddm.autoLogin.relogin = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -104,6 +103,8 @@
   environment.systemPackages = with pkgs; [
     #home-manager
   ];
+
+  powerManagement.cpuFreqGovernor = "performance";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
