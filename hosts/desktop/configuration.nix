@@ -92,11 +92,9 @@
   };
 
   # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "nonproto";
-
-  # Install firefox.
-  programs.firefox.enable = true;
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "nonproto";
+  services.displayManager.sddm.autoLogin.relogin = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

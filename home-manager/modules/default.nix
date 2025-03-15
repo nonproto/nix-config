@@ -5,10 +5,12 @@
 }: {
   imports = [
     ./programs/git.nix
+    ./programs/plasma.nix
     ./programs/vscode.nix
   ];
 
   #enable module
+  plasma.enable = true;
   git.enable = true;
   vscode.enable = true;
 
@@ -19,7 +21,7 @@
     telegram-desktop
     podman
     podman-compose
-    tldr-hs
+    tldr
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.
