@@ -4,6 +4,7 @@
   ...
 }: {
   imports = [
+    ./programs/bash.nix
     ./programs/git.nix
     ./programs/plasma.nix
     ./programs/vscode.nix
@@ -30,7 +31,7 @@
     inkscape
     distrobox
     boxbuddy
-    wpsoffice
+    onlyoffice-desktopeditors
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.
