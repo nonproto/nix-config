@@ -22,6 +22,15 @@
     podman
     podman-compose
     tldr
+    android-studio
+    discord
+    dropbox
+    gimp
+    kitty
+    inkscape
+    distrobox
+    boxbuddy
+    wpsoffice
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.
