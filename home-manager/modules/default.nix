@@ -38,5 +38,9 @@
     google-chrome.enable = true;
     floorp.enable = true;
     vim.enable = true;
+    java = {
+      enable = true;
+      package = pkgs.jdk17;
+    };
   };
 }
