@@ -18,21 +18,19 @@
 
   #home-manager packages
   home.packages = with pkgs; [
-    nixd
-    alejandra
+    nixd #nix auto complete
+    alejandra # nix format
     telegram-desktop
-    podman
-    podman-compose
-    tldr
+    tldr #command line manual
     android-studio
     discord
     dropbox
-    gimp
-    kitty
-    inkscape
-    distrobox
-    boxbuddy
-    onlyoffice-desktopeditors
+    gimp #image editing
+    kitty #terminal
+    inkscape #vector editing
+    distrobox #have another distro as an image
+    boxbuddy #ui for distrobox
+    onlyoffice-desktopeditors #office suite
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.

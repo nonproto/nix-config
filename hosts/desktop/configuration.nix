@@ -22,6 +22,21 @@
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  # networking.nameservers= ["10.89.0.4"];
+
+  virtualisation = {
+    podman = {
+      enable = true;
+      dockerSocket .enable = true;
+      dockerCompat = true;
+      autoPrune = {
+        enable = true; # Periodically prune Podman Images not in use.
+        dates = "weekly";
+        flags = ["--all"];
+      };
+      defaultNetwork.settings = {dns_enabled = true;};
+    };
+  };
 
   # Enable networking
   networking.networkmanager.enable = true;
