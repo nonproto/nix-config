@@ -17,6 +17,9 @@
         eval "$(ssh-agent -s)"
         ssh-add ~/.ssh/nonproto-gh
       '';
+      shellAliases = {
+        ssh-suse = "ssh -A 192.168.86.186";
+      };
     };
   };
 }
