@@ -23,9 +23,11 @@
     telegram-desktop
     tldr #command line manual
     android-studio
+    android-tools
     discord
     dropbox
     gimp #image editing
+    gsmartcontrol #disk info
     kitty #terminal
     inkscape #vector editing
     distrobox #have another distro as an image
