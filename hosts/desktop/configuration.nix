@@ -119,6 +119,21 @@
     #home-manager
   ];
 
+  fileSystems = {
+    "/run/media/nonproto/WD1T" = {
+      device = "/dev/disk/by-uuid/A06603FD6603D2C8";
+      fsType = "ntfs3";
+    };
+    "/run/media/nonproto/WD4T" = {
+      device = "/dev/disk/by-uuid/F2CEC791CEC74D13";
+      fsType = "ntfs3";
+    };
+    "/run/media/nonproto/ST2T" = {
+      device = "/dev/disk/by-uuid/D63A4C2F3A4C0EC5";
+      fsType = "ntfs3";
+    };
+  };
+
   powerManagement.cpuFreqGovernor = "performance";
 
   # Some programs need SUID wrappers, can be configured further or are
