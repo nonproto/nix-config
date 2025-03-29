@@ -99,7 +99,7 @@
   users.users.nonproto = {
     isNormalUser = true;
     description = "nonproto";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "adbusers"];
     packages = with pkgs; [
       kdePackages.kate
       #  thunderbird
