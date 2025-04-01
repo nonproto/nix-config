@@ -121,17 +121,20 @@
 
   fileSystems = {
     "/run/media/nonproto/WD1T" = {
-      device = "/dev/disk/by-uuid/A06603FD6603D2C8";
-      fsType = "ntfs3";
+      device = "/dev/disk/by-uuid/239ad3d2-afff-45d3-889b-8fb42aeb7207";
+      fsType = "ext4";
+      options = ["nofail" "users"];
     };
     "/run/media/nonproto/WD4T" = {
       device = "/dev/disk/by-uuid/da95248b-a98a-4a32-909c-00f9222c7703";
       fsType = "ext4";
+      options = ["nofail" "users"];
       # options = ["uid=1000,gid=100,dmask=002,fmask=003"];
     };
     "/run/media/nonproto/ST2T" = {
       device = "/dev/disk/by-uuid/D63A4C2F3A4C0EC5";
       fsType = "ntfs3";
+      options = ["nofail" "users"];
     };
   };
 
