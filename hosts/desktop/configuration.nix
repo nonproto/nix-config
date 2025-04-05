@@ -116,8 +116,14 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    openrazer-daemon
     #home-manager
   ];
+
+  hardware.openrazer = {
+    enable = true;
+    users = ["nonproto"];
+  };
 
   fileSystems = {
     "/run/media/nonproto/WD1T" = {
