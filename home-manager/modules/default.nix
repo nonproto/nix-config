@@ -30,6 +30,7 @@
     gsmartcontrol #disk info
     kitty #terminal
     inkscape #vector editing
+    razergenie #razer mouse ui
     distrobox #have another distro as an image
     boxbuddy #ui for distrobox
     onlyoffice-desktopeditors #office suite
