@@ -34,6 +34,7 @@
     distrobox #have another distro as an image
     boxbuddy #ui for distrobox
     onlyoffice-desktopeditors #office suite
+    vlc
   ];
 
   #enable directly.  Switch to modules if you start configuring the app.
