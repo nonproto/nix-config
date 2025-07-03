@@ -28,7 +28,7 @@
     dropbox
     gimp #image editing
     gsmartcontrol #disk info
-    kitty #terminal
+    kdePackages.kcalc
     inkscape #vector editing
     razergenie #razer mouse ui
     distrobox #have another distro as an image
