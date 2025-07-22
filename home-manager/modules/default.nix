@@ -27,9 +27,11 @@
     discord
     dropbox
     gimp #image editing
+    go
     gsmartcontrol #disk info
     kdePackages.kcalc
     inkscape #vector editing
+    jetbrains-toolbox
     razergenie #razer mouse ui
     distrobox #have another distro as an image
     boxbuddy #ui for distrobox
