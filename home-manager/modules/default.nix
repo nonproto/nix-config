@@ -24,14 +24,18 @@
     tldr #command line manual
     android-studio
     android-tools
+    davinci-resolve-studio
     discord
     dropbox
     gimp #image editing
     go
+    go-mtpfs
     gsmartcontrol #disk info
     kdePackages.kcalc
     inkscape #vector editing
     jetbrains-toolbox
+    jq
+    obs-studio
     razergenie #razer mouse ui
     distrobox #have another distro as an image
     boxbuddy #ui for distrobox
